@@ -1,9 +1,6 @@
 # Compiled class file
 *.class
 out
-*.xml
-*.iml
-*.properties
 .idea
 
 
@@ -33,6 +30,4 @@ target
 .classpath
 .project
 .settings
-src/main/webapp/META-INF
 .idea
-*.iml
