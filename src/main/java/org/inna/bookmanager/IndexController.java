@@ -1,4 +1,4 @@
-package org.inna.controllers;
+package org.inna.bookmanager;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
