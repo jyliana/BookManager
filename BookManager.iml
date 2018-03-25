@@ -9,9 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src" />
-        </sourceRoots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
@@ -19,7 +17,9 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="hibernate4AnnotatedSessionFactory" value="dataSource" />
+        </datasource-map>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -39,5 +39,7 @@
     <orderEntry type="library" name="Spring MVC-4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Hibernate 5.2.14-5.2.14" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="org.apache.commons:commons-dbcp2:2.2.0" level="project" />
+    <orderEntry type="library" name="javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>

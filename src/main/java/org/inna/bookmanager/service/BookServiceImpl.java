@@ -2,10 +2,12 @@ package org.inna.bookmanager.service;
 
 import org.inna.bookmanager.dao.BookDao;
 import org.inna.bookmanager.model.Book;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 public class BookServiceImpl implements BookService {
     private BookDao bookDao;
 
@@ -16,30 +18,31 @@ public class BookServiceImpl implements BookService {
     @Override
     @Transactional
     public void addBook(Book book) {
+        this.bookDao.addBook(book);
 
     }
 
     @Override
     @Transactional
     public void updateBook(Book book) {
-
+        this.bookDao.updateBook(book);
     }
 
     @Override
     @Transactional
     public void removeBook(int id) {
-
+        this.bookDao.removeBook(id);
     }
 
     @Override
     @Transactional
     public Book getBookById(int id) {
-        return null;
+        return this.bookDao.getBookById(id);
     }
 
     @Override
     @Transactional
     public List<Book> listBooks() {
-        return null;
+        return this.bookDao.listBooks();
     }
 }

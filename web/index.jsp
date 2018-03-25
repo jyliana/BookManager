@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Inna
@@ -14,7 +13,7 @@
 <body>
 <h3>Inna presents</h3>
 <br/>
-<a href="<c:url value="/books"/>" target="_blank">Books list</a>
+<a href="/books" target="_blank">Books list</a>
 <br/>
 </body>
 </html>
